@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys - Navigate Your Next</title>
+    <meta name="description" content="Infosys is a global leader in next-generation digital services and consulting, helping enterprises navigate their digital transformation journey.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">Infosys</a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#journey" onclick="scrollToSection('journey')">Journey</a></li>
+                    <li><a href="#vision" onclick="scrollToSection('vision')">Vision</a></li>
+                    <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
+                    <li><a href="#culture" onclick="scrollToSection('culture')">Culture</a></li>
+                    <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Infosys</h1>
+            <div class="typing-text" id="typingText">
+                <span id="typewriterText"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                A global leader in next-generation digital services and consulting, 
+                helping enterprises navigate their digital transformation journey.
+            </p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-outline" onclick="scrollToSection('about')">Learn More</a>
+                <a href="#contact" class="btn btn-primary" onclick="scrollToSection('contact')">Get Started</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Infosys</h2>
+                <div class="section-underline"></div>
+                <p class="section-description">
+                    Leading the way in digital transformation for over four decades
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        Infosys is a global leader in next-generation digital services and consulting. 
+                        We enable clients in more than 56 countries to navigate their digital transformation. 
+                        With over four decades of experience in managing the systems and workings of global 
+                        enterprises, we expertly steer clients through their digital journey.
+                    </p>
+                    
+                    <p class="about-text">
+                        We do this by enabling the enterprise with an AI-powered core that helps prioritize 
+                        the execution of change. We also empower the business with agile digital at scale to 
+                        deliver unprecedented levels of performance and customer delight.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">56+</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">350K+</span>
+                            <span class="stat-label">Employees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="about-icon">⚡</div>
+                    <h3>Digital Innovation</h3>
+                    <p>Transforming businesses through technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Journey Section - SMALLER as requested -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Journey</h2>
+                <div class="section-underline"></div>
+                <p class="section-description">
+                    Key milestones in our transformation story
+                </p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-items" id="timelineItems">
+                    <!-- Timeline items will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="section vision" id="vision">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Vision & Mission</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-card-header">
+                        <div class="vision-icon">👁️</div>
+                        <h3>Vision</h3>
+                    </div>
+                    <p>
+                        To be a globally respected corporation that provides best-of-breed business 
+                        solutions, leveraging technology, delivered by best-in-class people, thereby 
+                        adding value to our clients, shareholders, employees, and society.
+                    </p>
+                </div>
+
+                <div class="vision-card">
+                    <div class="vision-card-header">
+                        <div class="vision-icon">⭐</div>
+                        <h3>Mission</h3>
+                    </div>
+                    <p>
+                        To enable clients to navigate their digital transformation by providing 
+                        industry-leading consulting, technology, and outsourcing services, while 
+                        maintaining our commitment to sustainable and responsible business practices.
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h3 style="font-size: 2rem; margin-bottom: 30px;">Our Values</h3>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-item">
+                    <span class="value-icon">🎯</span>
+                    <h4>Excellence</h4>
+                    <p>Deliver the best</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🤝</span>
+                    <h4>Integrity</h4>
+                    <p>Be ethical & transparent</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">💡</span>
+                    <h4>Innovation</h4>
+                    <p>Think differently</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🌱</span>
+                    <h4>Sustainability</h4>
+                    <p>Care for tomorrow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Expertise</h2>
+                <div class="section-underline"></div>
+                <p class="section-description">
+                    Cutting-edge technologies and innovative solutions to drive your business forward
+                </p>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="section culture" id="culture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work Culture</h2>
+                <div class="section-underline"></div>
+                <p class="section-description">
+                    Where innovation meets collaboration, and every voice matters
+                </p>
+            </div>
+
+            <div class="culture-grid">
+                <div class="culture-image">
+                    <img src="./attached_assets/generated_images/image2.png" 
+                         alt="Diverse team collaboration">
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 30px;">What Makes Us Special</h3>
+                    <div class="culture-values" id="cultureValues">
+                        <!-- Culture values will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px; margin-bottom: 40px;">
+                <h3 style="font-size: 2rem; margin-bottom: 30px;">What Our Team Says</h3>
+            </div>
+
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-underline"></div>
+                <p class="section-description">
+                    Ready to transform your business? Let's start the conversation.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 30px;">Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-header">
+                            <span class="contact-item-icon">📍</span>
+                            <span class="contact-item-title">Global Headquarters</span>
+                        </div>
+                        <div class="contact-item-details">
+                            Electronics City<br>
+                            Bangalore 560100<br>
+                            India
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-header">
+                            <span class="contact-item-icon">📞</span>
+                            <span class="contact-item-title">Phone</span>
+                        </div>
+                        <div class="contact-item-details">
+                            +91 80 2852 0261<br>
+                            +1 646 254 3000
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-header">
+                            <span class="contact-item-icon">✉️</span>
+                            <span class="contact-item-title">Email</span>
+                        </div>
+                        <div class="contact-item-details">
+                            contact@infosys.com<br>
+                            careers@infosys.com
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-header">
+                            <span class="contact-item-icon">🌍</span>
+                            <span class="contact-item-title">Global Offices</span>
+                        </div>
+                        <div class="contact-item-details">
+                            56+ countries<br>
+                            280+ locations
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 15px;">Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">L</a>
+                            <a href="#" class="social-link">T</a>
+                            <a href="#" class="social-link">F</a>
+                            <a href="#" class="social-link">Y</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 30px;">Send us a Message</h3>
+                    
+                    <div id="contactFormContainer">
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required placeholder="Your full name">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required placeholder="your.email@company.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label class="form-label" for="company">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-input" placeholder="Your company name">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label class="form-label" for="message">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us about your project or inquiry..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">Infosys</div>
+                    <p class="footer-description">
+                        Navigate your next with confidence. We are a global leader in next-generation 
+                        digital services and consulting, helping enterprises accelerate their digital transformation.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">L</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Digital Services</a></li>
+                        <li><a href="#">Engineering Services</a></li>
+                        <li><a href="#">Products & Platforms</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Industries</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Banking & Financial Services</a></li>
+                        <li><a href="#">Manufacturing</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Retail & CPG</a></li>
+                        <li><a href="#">Communications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">White Papers</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Infosys Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
